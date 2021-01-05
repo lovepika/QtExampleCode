@@ -2,6 +2,7 @@
 #define B_H
 
 #include "a.h"
+#include <QMouseEvent>
 
 class B : public A
 {

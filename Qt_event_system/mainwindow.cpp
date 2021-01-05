@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     MyWidget *myWidget = new MyWidget(this); //mainwindows is parent
-    myWidget->resize(200,200);
+    myWidget->resize(300,300);//coordinate in mainwindows
 
     A *a = new A();
     a->setParent(myWidget); // myWidget is parent

@@ -38,6 +38,7 @@ add_executable(Qt_event_system
     b.cpp
     b.h
     mainwindow.ui
+    readme.txt
     )
 
 target_link_libraries(Qt_event_system PRIVATE Qt5::Widgets)
