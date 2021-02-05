@@ -16,7 +16,7 @@ public:
 
 protected:
     // 处理自定义事件 方法1
-    void customEvent(QEvent *event)override;
+    void customEvent(QEvent *event) override;
     // 处理自定义事件 方法2
     bool event(QEvent * event) override;
 };
