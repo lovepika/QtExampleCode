@@ -1,36 +1,38 @@
-#include "widget.h"
+#include "server.h"
 #include "my_qevent.h"
 
 #include <QDebug>
-#include <QKeyEvent>
+#include <QEvent>
 
 
-Widget::Widget(QWidget *parent)
-    : QWidget(parent)
+Server::Server(QObject *parent)
+    : QObject(parent)
 {
 }
 
-Widget::~Widget()
+Server::~Server()
 {
 
 }
 
-void Widget::customEvent(QEvent *event)
+void Server::customEvent(QEvent *event)
 {
     if(event->type() == MY_QEVENT_DATA){
-        MyQEvent * event = static_cast<MyQEvent *>(event);
+        MyQEvent *event = static_cast<MyQEvent *>(event);
         // do something
+        qDebug() << event->getData();
         qDebug() << "处理自定义事件";
     }
 }
 
-bool Widget::event(QEvent *event)
+bool Server::event(QEvent *event)
 {
     if(event->type() == MY_QEVENT_DATA){
         MyQEvent * event = static_cast<MyQEvent *>(event);
+        qDebug() << event->getData();
         // do something
         qDebug() << "处理自定义事件";
         return true;
     }
-    return QWidget::event(event);
+    return QObject::event(event);
 }

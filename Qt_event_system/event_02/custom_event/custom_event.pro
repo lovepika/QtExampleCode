@@ -25,18 +25,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        client.cpp \
         main.cpp \
         my_qevent.cpp \
-        widget.cpp
+        server.cpp
 
 HEADERS += \
+        client.h \
         my_qevent.h \
-        widget.h
+        server.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-DISTFILES += \
-    readme.md
+DISTFILES +=
