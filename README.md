@@ -23,6 +23,12 @@
 - 对象树与拥有权
 - 信号和槽 [link-->Qt信号和槽机制](https://www.cnblogs.com/__tudou__/p/14262640.html)
 
+### Qt Event System
+
+- [Event System Abstract](https://github.com/lovepika/QtExampleCode/tree/master/Qt_event_system)
+- [Event System introduction](https://github.com/lovepika/QtExampleCode/tree/master/Qt_event_system/event_01)
+- [How to Create Custom Event](https://github.com/lovepika/QtExampleCode/tree/master/Qt_event_system/event_02/custom_event)
+
 ## Qt GUI
 
 ## Qt Widgets
